@@ -9,7 +9,7 @@ const SimSwapQuiz = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
 
   const questions = [
     {
@@ -69,7 +69,7 @@ const SimSwapQuiz = () => {
     }
   ];
 
-  const handleAnswerClick = (answerIndex) => {
+  const handleAnswerClick = (answerIndex: (number | null)) => {
     if (!answered) {
       setSelectedAnswer(answerIndex);
       setAnswered(true);
