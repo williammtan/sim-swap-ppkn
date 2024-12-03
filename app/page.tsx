@@ -5,6 +5,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Shield, AlertTriangle, History, Book, Users, Building2, Lock, Bell } from 'lucide-react';
+import { Video } from './video';
 
 
 const SimSwapWebsite = () => {
@@ -78,6 +79,8 @@ const SimSwapWebsite = () => {
             </div>
           </div>
         </section>
+
+        <Video />
 
         {/* Government Action */}
         <section id="action" className="mb-12">
